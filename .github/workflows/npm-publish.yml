@@ -28,19 +28,17 @@ jobs:
         # 安装项目依赖，并编译
       - name: Install dependencies
         run: |
-	        pnpm i
-	        pnpm run build
-        
-        # 添加access token到.npmrc
-	  - name: Add Npm Token
-	    run: |
-			echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
-		    ls -al
-		    cat ./.npmrc
-		
+          pnpm i
+          pnpm run build
+
+      - name: Add Npm Token
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
+          ls -al
+          cat ./.npmrc
+
         # 发布到 npm registry
       - name: Publish to npm
         run: pnpm publish
         env:
-	        # 读取github的secrets变量，这里的NPM_TOKEN是前面设置的变量名
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
