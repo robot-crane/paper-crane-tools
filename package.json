@@ -1,6 +1,6 @@
 {
   "name": "crane-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "crane(paper_robot@outlook.com)",
   "license": "ISC",
   "description": "Crane's personal tool library",
@@ -14,6 +14,10 @@
     "build": "rollup -c",
     "test": "jest"
   },
+  "sideEffects": false,
+  "files": [
+    "out"
+  ],
   "type": "module",
   "devDependencies": {
     "@babel/core": "^7.26.0",
