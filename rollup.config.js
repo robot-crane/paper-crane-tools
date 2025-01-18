@@ -22,5 +22,6 @@ export default {
     }),
     // visualizer({ filename: './bundle-analysis.html', open: true })
   ],
-  treeshake: true // 确保树摇启用
+  treeshake: true, // 确保树摇启用
+  external: ['radash', 'ulid', 'date-fns']
 };
