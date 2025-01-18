@@ -1,9 +1,14 @@
 {
   "name": "crane-tools",
   "version": "0.0.2",
-  "author": "crane",
+  "author": "crane(paper_robot@outlook.com)",
   "license": "ISC",
   "description": "Crane's personal tool library",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:robot-crane/crane-tools.git"
+  },
+  "homepage": "https://github.com/robot-crane/crane-tools",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
