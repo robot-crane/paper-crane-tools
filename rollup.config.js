@@ -8,10 +8,12 @@ export default {
   input: 'src/index.ts', // 入口文件
   output: [
     {
-      file: 'out/bundle.esm.js', // ES模块格式的输出文件
+      file: 'out/crane-tools.esm.js', // ES模块格式的输出文件
       format: 'es',
-      // sourcemap:true
-    }
+      strict: true,
+      entryFileNames: '[name].mjs',
+      sourcemap: true
+    },
   ],
   plugins: [
     nodeResolve(),
