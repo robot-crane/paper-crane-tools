@@ -1,6 +1,6 @@
 {
   "name": "crane-tools",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "crane(paper_robot@outlook.com)",
   "license": "ISC",
   "description": "Crane's personal tool library",
@@ -11,6 +11,7 @@
   "homepage": "https://github.com/robot-crane/crane-tools",
   "main": "index.js",
   "module": "out/crane-tools.esm.js",
+  "types": "out/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
