@@ -2,15 +2,17 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "outDir": "./out",
+    "rootDir": "src",
+    "strict": true,
     "module": "ESNext",
-    "target": "es5",
+    "target": "ES6",
+    "lib": ["ES6"],
     "declaration": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "declarationMap": true, // enables importers to jump to source
+    "skipLibCheck": true,
+    "declarationMap": true // enables importers to jump to source
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "out"]
 }

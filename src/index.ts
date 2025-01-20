@@ -7,10 +7,6 @@ export {
   toUpper,
   capitalizeFirstLetter,
   randomColor,
-  ulid
-} from "./lib/string.utils"
-export {
-  dateFormat,
-  getTimeStamp,
-  getUnixTimeStamp,
-} from "./lib/time.utils"
+  ulid,
+} from './lib/string.utils';
+export { dateFormat, getTimeStamp, getUnixTimeStamp } from './lib/time.utils';
