@@ -9,4 +9,10 @@ export {
   randomColor,
   ulid,
 } from './lib/string.utils';
-export { dateFormat, getTimeStamp, getUnixTimeStamp } from './lib/time.utils';
+export {
+  dateFormat,
+  getTimeStamp,
+  getUnixTimeStamp,
+  getCurrentTimeStamp,
+  getCurrentUnixTimeStamp,
+} from './lib/time.utils';
