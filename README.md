@@ -11,5 +11,5 @@ npm install crane-tools
 To use `crane-tools`, you need to install the following dependencies:
 
 ```bash
-npm install radash date-fns uuid
+npm install radash date-fns uuid bigjs
 ```
