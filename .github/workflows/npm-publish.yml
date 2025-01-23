@@ -24,7 +24,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+        echo "PATH=$PATH"
 
       - name: Install dependencies
         run: |
