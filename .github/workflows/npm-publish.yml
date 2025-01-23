@@ -58,4 +58,4 @@ jobs:
           createGithubReleases: true
 
       - name: Publish
-        run: npx pnpm exec changeset publish
+        run: pnpm publish
