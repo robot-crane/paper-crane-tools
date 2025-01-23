@@ -32,7 +32,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pnpm i
+          pnpm install --frozen-lockfile
           pnpm run check
           pnpm run build
 
@@ -51,9 +51,10 @@ jobs:
         with:
           branch: main
           publish: true
+          publish: pnpm release
           version: pnpm run version
-          commit: '[ci] release'
-          title: '[ci] release'
+          commit: "chore: version packages"
+          title: "chore: version packages"
           setupGitUser: true
           createGithubReleases: true
 
