@@ -1,6 +1,6 @@
 {
   "name": "crane-tools",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": "crane(paper_robot@outlook.com)",
   "license": "MIT",
   "description": "Crane's personal tool library",
@@ -16,7 +16,9 @@
     "build": "rollup -c",
     "test": "jest",
     "format": "pnpm exec prettier . --write",
-    "check": "tsc --pretty --noEmit"
+    "check": "tsc --pretty --noEmit",
+    "changeset": "changeset",
+    "version": "changeset version"
   },
   "sideEffects": false,
   "files": [
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
+    "@changesets/cli": "^2.27.11",
     "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",

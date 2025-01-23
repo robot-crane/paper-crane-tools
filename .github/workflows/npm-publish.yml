@@ -7,6 +7,10 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   publish:
     # 在 Ubuntu 最新版本上运行作业
@@ -20,6 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
+          cache: 'pnpm'
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -30,8 +35,18 @@ jobs:
           pnpm run check
           pnpm run build
 
-      - name: Bump npm version
-        run: npm version patch
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          branch: main
+          tag: true
+          publish: true
+          yes: true
+          version: pnpm run version
+          publish: pnpm exec changeset publish
+          commit: '[ci] release'
+          title: '[ci] release'
 
       - name: Add Npm Token
         run: |
@@ -44,3 +59,4 @@ jobs:
         run: pnpm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
