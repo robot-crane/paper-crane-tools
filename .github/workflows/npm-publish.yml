@@ -54,9 +54,8 @@ jobs:
           ls -al
           cat ./.npmrc
 
-        # 发布到 npm registry
-      - name: Publish to npm
-        run: pnpm publish
+      # - name: Publish to npm
+        # run: pnpm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
