@@ -16,7 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-        # 设置 Node.js 环境
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -25,12 +24,14 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
-        # 安装项目依赖，并编译
       - name: Install dependencies
         run: |
           pnpm i
           pnpm run check
           pnpm run build
+
+      - name: Bump npm version
+        run: npm version patch
 
       - name: Add Npm Token
         run: |
