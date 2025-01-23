@@ -4,8 +4,8 @@ name: Publish to npm
 # 触发条件：当 main 分支有 push 事件时触发
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
 
 jobs:
   publish:
