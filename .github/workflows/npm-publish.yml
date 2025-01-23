@@ -26,8 +26,9 @@ jobs:
           node-version: '22.x'
 
       - name: Install pnpm
-        run: npm install -g pnpm
-        echo "PATH=$PATH"
+        run: |
+          npm install -g pnpm
+          echo "PATH=$PATH"
 
       - name: Install dependencies
         run: |
