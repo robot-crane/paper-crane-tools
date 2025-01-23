@@ -2,9 +2,9 @@ import { camel, capitalize, snake, title } from 'radash';
 import { ulid as ulidJs } from 'ulid';
 
 /**
- * 将字符串转换为驼峰命名格式。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的驼峰命名字符串。
+ * Converts a string to camel case format.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The camel case formatted string.
  */
 export function toCamel(str?: string): string {
   if (!str) return '';
@@ -12,9 +12,9 @@ export function toCamel(str?: string): string {
 }
 
 /**
- * 将字符串转换为蛇形命名格式。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的蛇形命名字符串。
+ * Converts a string to snake case format.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The snake case formatted string.
  */
 export function toSnake(str?: string): string {
   if (!str) return '';
@@ -22,9 +22,9 @@ export function toSnake(str?: string): string {
 }
 
 /**
- * 将字符串转换为标题格式，每个单词的首字母大写。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的标题格式字符串。
+ * Converts a string to title case, capitalizing the first letter of each word.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The title case formatted string.
  */
 export function toTitle(str?: string): string {
   if (!str) return '';
@@ -32,9 +32,9 @@ export function toTitle(str?: string): string {
 }
 
 /**
- * 将字符串的第一个字符转换为大写。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的字符串。
+ * Converts the first character of a string to uppercase.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The string with the first character capitalized.
  */
 export function toCapitalize(str?: string): string {
   if (!str) return '';
@@ -42,27 +42,27 @@ export function toCapitalize(str?: string): string {
 }
 
 /**
- * 将字符串转换为小写。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的小写字符串。
+ * Converts a string to lowercase.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The lowercase formatted string.
  */
 export function toLower(str?: string): string | undefined {
   return str?.toLowerCase();
 }
 
 /**
- * 将字符串转换为大写。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 转换后的大写字符串。
+ * Converts a string to uppercase.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The uppercase formatted string.
  */
 export function toUpper(str?: string): string | undefined {
   return str?.toUpperCase();
 }
 
 /**
- * 将字符串的首字母转换为大写。
- * @param {string} [str] - 待转换的字符串。
- * @returns {string} 首字母大写的字符串。
+ * Capitalizes the first letter of a string.
+ * @param {string} [str] - The string to convert.
+ * @returns {string} The string with the first letter capitalized.
  */
 export function capitalizeFirstLetter(str?: string): string {
   // 首字母大写
@@ -71,16 +71,16 @@ export function capitalizeFirstLetter(str?: string): string {
 }
 
 /**
- * 生成一个随机颜色代码。
- * @returns {string} 随机颜色代码。
+ * Generates a random color code.
+ * @returns {string} The random color code.
  */
 export function randomColor(): string {
   return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
 /**
- * 生成一个 ULID (Universally Unique Lexicographically Sortable Identifier)。
- * @returns {string} 生成的 ULID。
+ * Generates a ULID (Universally Unique Lexicographically Sortable Identifier).
+ * @returns {string} The generated ULID.
  */
 export function ulid(): string {
   return ulidJs();

@@ -1,3 +1,5 @@
+import { dateFormat } from './lib/time.utils';
+
 export {
   toCamel,
   toSnake,

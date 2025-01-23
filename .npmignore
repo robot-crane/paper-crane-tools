@@ -4,4 +4,4 @@ node_modules/
 
 # 排除目录
 docs/
-tests/
+test/
