@@ -50,11 +50,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOOLS_CI_TOKEN }}
         with:
           branch: main
-          publish: true
           publish: pnpm release
           version: pnpm run version
-          commit: "chore: version packages"
-          title: "chore: version packages"
+          commit: 'chore: version packages'
+          title: 'chore: version packages'
           setupGitUser: true
           createGithubReleases: true
 
