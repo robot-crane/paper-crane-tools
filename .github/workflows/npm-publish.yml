@@ -36,6 +36,14 @@ jobs:
           pnpm run check
           pnpm run build
 
+      - name: Add Npm Token
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
+          ls -al
+          cat ./.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1
         env:
@@ -51,11 +59,3 @@ jobs:
 
       - name: Publish
         run: npx pnpm exec changeset publish
-
-      - name: Add Npm Token
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ./.npmrc
-          ls -al
-          cat ./.npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
