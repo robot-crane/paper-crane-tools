@@ -44,9 +44,11 @@ jobs:
           publish: true
           yes: true
           version: pnpm run version
-          publish: pnpm exec changeset publish
           commit: '[ci] release'
           title: '[ci] release'
+
+      - name: Publish
+        run: pnpm exec changeset publish
 
       - name: Add Npm Token
         run: |
@@ -54,8 +56,6 @@ jobs:
           ls -al
           cat ./.npmrc
 
-      # - name: Publish to npm
-        # run: pnpm publish
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
