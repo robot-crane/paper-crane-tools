@@ -39,7 +39,7 @@ jobs:
       - name: Create Release Pull Request or Publish
         uses: changesets/action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOOLS_CI_TOKEN }}
         with:
           branch: main
           publish: true
