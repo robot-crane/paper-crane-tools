@@ -20,7 +20,7 @@
     "check": "tsc --pretty --noEmit",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset publish --access public"
+    "release": "changeset publish"
   },
   "sideEffects": false,
   "files": [
@@ -58,5 +58,8 @@
   },
   "bugs": {
     "url": "https://github.com/robot-crane/crane-tools/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
