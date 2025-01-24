@@ -1,5 +1,11 @@
 # crane-tools
 
+## 0.0.24
+
+### Patch Changes
+
+- [`69712d4`](https://github.com/robot-crane/crane-tools/commit/69712d4d9bac23dc3b3085cf3d2cb050859466ed) Thanks [@robot-crane](https://github.com/robot-crane)! - build: ignore src, readme.md change install type
+
 ## 0.0.23
 
 ### Patch Changes
