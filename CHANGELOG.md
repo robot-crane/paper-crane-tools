@@ -1,5 +1,11 @@
 # crane-tools
 
+## 0.0.23
+
+### Patch Changes
+
+- [`2d8900f`](https://github.com/robot-crane/crane-tools/commit/2d8900fbdc0dcb842f502ccc6d05fe5ffeee30c5) Thanks [@robot-crane](https://github.com/robot-crane)! - build: add publishConfig
+
 ## 0.0.22
 
 ### Patch Changes
