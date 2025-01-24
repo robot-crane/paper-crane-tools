@@ -1,6 +1,5 @@
 {
-  "name": "@crane/crane-tools",
-  "private": false,
+  "name": "crane-tools",
   "version": "0.0.18",
   "author": "crane<paper_robot@outlook.com>",
   "license": "MIT",
