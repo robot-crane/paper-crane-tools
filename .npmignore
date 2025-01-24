@@ -5,3 +5,6 @@ node_modules/
 # 排除目录
 docs/
 test/
+.changeset/
+.github/
+src/

@@ -3,7 +3,7 @@ This is Crane's personal tool library.
 ## Usage
 
 ```bash
-npm install crane-tools
+npm i @papercrane/paper-crane-tools
 ```
 
 ## Dependencies
