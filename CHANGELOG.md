@@ -1,5 +1,11 @@
 # crane-tools
 
+## 0.0.25
+
+### Patch Changes
+
+- [`4c4e51b`](https://github.com/robot-crane/paper-crane-tools/commit/4c4e51b31c381e6f4508ad92423dcffb8aa8bed6) Thanks [@robot-crane](https://github.com/robot-crane)! - build: change package name, change repository name
+
 ## 0.0.24
 
 ### Patch Changes
