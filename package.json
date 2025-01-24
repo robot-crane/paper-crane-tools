@@ -1,13 +1,13 @@
 {
-  "name": "@paper-crane/paper-crane-tools",
+  "name": "@papercrane/paper-crane-tools",
   "private": false,
   "version": "0.0.21",
-  "author": "crane<paper_robot@outlook.com>",
+  "author": "crane <paper_robot@outlook.com>",
   "license": "MIT",
   "description": "Crane's personal tool library",
   "repository": {
     "type": "git",
-    "url": "git@github.com:robot-crane/crane-tools.git"
+    "url": "git+ssh://git@github.com/robot-crane/crane-tools.git"
   },
   "homepage": "https://github.com/robot-crane/crane-tools",
   "main": "src/index.ts",
@@ -55,5 +55,8 @@
     "date-fns": "^4.1.0",
     "radash": "^12.1.0",
     "ulid": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/robot-crane/crane-tools/issues"
   }
 }
