@@ -11,7 +11,7 @@ export default [
     input: 'src/index.ts', // 入口文件
     output: [
       {
-        file: 'out/crane-tools.esm.js', // ES模块格式的输出文件
+        file: 'out/paper-crane-tools.esm.js', // ES模块格式的输出文件
         format: 'es',
         strict: true,
         entryFileNames: '[name].mjs',

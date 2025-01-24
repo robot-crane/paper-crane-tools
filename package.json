@@ -7,11 +7,11 @@
   "description": "Crane's personal tool library",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/robot-crane/crane-tools.git"
+    "url": "git+ssh://git@github.com/robot-crane/paper-crane-tools.git"
   },
-  "homepage": "https://github.com/robot-crane/crane-tools",
+  "homepage": "https://github.com/robot-crane/paper-crane-tools",
   "main": "src/index.ts",
-  "module": "out/crane-tools.esm.js",
+  "module": "out/paper-crane-tools.esm.js",
   "types": "out/index.d.ts",
   "scripts": {
     "build": "rollup -c",
@@ -26,8 +26,8 @@
   "files": [
     "out/index.d.ts",
     "out/lib/**",
-    "out/crane-tools.esm.js.map",
-    "out/crane-tools.esm.js"
+    "out/paper-crane-tools.esm.js.map",
+    "out/paper-crane-tools.esm.js"
   ],
   "type": "module",
   "devDependencies": {
@@ -57,7 +57,7 @@
     "ulid": "^2.3.0"
   },
   "bugs": {
-    "url": "https://github.com/robot-crane/crane-tools/issues"
+    "url": "https://github.com/robot-crane/paper-crane-tools/issues"
   },
   "publishConfig": {
     "access": "public"
