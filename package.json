@@ -1,5 +1,5 @@
 {
-  "name": "crane-tools",
+  "name": "@paper-crane/paper-crane-tools",
   "version": "0.0.19",
   "author": "crane<paper_robot@outlook.com>",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "check": "tsc --pretty --noEmit",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset publish"
+    "release": "changeset publish --access public"
   },
   "sideEffects": false,
   "files": [
