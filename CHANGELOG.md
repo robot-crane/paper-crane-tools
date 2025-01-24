@@ -1,5 +1,11 @@
 # crane-tools
 
+## 0.0.18
+
+### Patch Changes
+
+- [`b08318f`](https://github.com/robot-crane/crane-tools/commit/b08318f860d0a503c0c2213abeb860f2d351396d) Thanks [@robot-crane](https://github.com/robot-crane)! - no private
+
 ## 0.0.17
 
 ### Patch Changes
