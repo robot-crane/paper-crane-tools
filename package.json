@@ -18,7 +18,8 @@
     "format": "pnpm exec prettier . --write",
     "check": "tsc --pretty --noEmit",
     "changeset": "changeset",
-    "version": "changeset version"
+    "version": "changeset version",
+    "release": "changeset publish"
   },
   "sideEffects": false,
   "files": [
