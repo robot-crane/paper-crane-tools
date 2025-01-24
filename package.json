@@ -1,5 +1,6 @@
 {
   "name": "@paper-crane/paper-crane-tools",
+  "private": false,
   "version": "0.0.20",
   "author": "crane<paper_robot@outlook.com>",
   "license": "MIT",
