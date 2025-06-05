@@ -6,7 +6,7 @@
     "strict": true,
     "module": "ESNext",
     "target": "ES6",
-    "lib": ["ES6"],
+    "lib": ["ES6", "DOM"],
     "declaration": true,
     "esModuleInterop": true,
     "sourceMap": true,

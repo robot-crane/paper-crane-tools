@@ -4,16 +4,30 @@ import {
   getTime as dateFnsGetTime,
   getUnixTime as dateFnsGetUnixTime,
 } from 'date-fns';
+import { isNumericString } from './utils';
+
+type FormatDateInput = string | number | Date;
 
 /**
  * Formats a date into a specified string format.
- * @param {DateArg<Date>} time - The date to format.
+ * @param {FormatDateInput} time - The date to format.
  * @param {string} [format='yyyy-MM-dd HH:mm:ss'] - The format string.
  * @returns {string} The formatted date string.
  */
-export function dateFormat(time?: DateArg<Date>, format?: string): string {
+export function dateFormat(time?: FormatDateInput, format?: string): string {
   if (!time) return '';
-  return dateFnsFormat(time, format || 'yyyy-MM-dd HH:mm:ss');
+  let _time:FormatDateInput = time;
+  if(typeof time === 'number') {
+    _time = new Date(time);
+  }
+  if(typeof time === 'string') {
+    if(isNumericString(time)) {
+      _time = new Date(Number(time));
+    }else {
+      _time = new Date(time);
+    }
+  }
+  return dateFnsFormat(_time, format || 'yyyy-MM-dd HH:mm:ss');
 }
 
 /**
@@ -51,3 +65,5 @@ export function getCurrentTimeStamp(): number {
 export function getCurrentUnixTimeStamp(): number {
   return dateFnsGetUnixTime(new Date());
 }
+
+dateFormat('1740744315483')
