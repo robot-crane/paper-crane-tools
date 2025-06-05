@@ -3,9 +3,9 @@
  * @param {string} str - The string to be checked.
  * @returns {boolean} - Returns true if the string contains only digits, otherwise returns false.
  */
-export function isNumericString(str:string) {
-    if (typeof str !== 'string') {
-        return false;
-    }
-    return /^\d+$/.test(str);
+export function isNumericString(str: string) {
+  if (typeof str !== 'string') {
+    return false;
+  }
+  return /^\d+$/.test(str);
 }

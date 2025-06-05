@@ -16,14 +16,14 @@ type FormatDateInput = string | number | Date;
  */
 export function dateFormat(time?: FormatDateInput, format?: string): string {
   if (!time) return '';
-  let _time:FormatDateInput = time;
-  if(typeof time === 'number') {
+  let _time: FormatDateInput = time;
+  if (typeof time === 'number') {
     _time = new Date(time);
   }
-  if(typeof time === 'string') {
-    if(isNumericString(time)) {
+  if (typeof time === 'string') {
+    if (isNumericString(time)) {
       _time = new Date(Number(time));
-    }else {
+    } else {
       _time = new Date(time);
     }
   }
@@ -65,5 +65,3 @@ export function getCurrentTimeStamp(): number {
 export function getCurrentUnixTimeStamp(): number {
   return dateFnsGetUnixTime(new Date());
 }
-
-dateFormat('1740744315483')
