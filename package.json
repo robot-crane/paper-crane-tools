@@ -1,7 +1,7 @@
 {
   "name": "@papercrane/paper-crane-tools",
   "private": false,
-  "version": "0.0.27",
+  "version": "0.0.28",
   "author": "crane <paper_robot@outlook.com>",
   "license": "MIT",
   "description": "Crane's personal tool library",
@@ -15,7 +15,7 @@
   "types": "out/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest",
+    "test": "vitest",
     "format": "pnpm exec prettier . --write",
     "check": "tsc --pretty --noEmit",
     "changeset": "changeset",
@@ -31,30 +31,28 @@
   ],
   "type": "module",
   "devDependencies": {
-    "@babel/core": "^7.28.4",
-    "@babel/preset-env": "^7.27.2",
-    "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.7",
-    "@rollup/plugin-alias": "^5.1.1",
-    "@rollup/plugin-commonjs": "^28.0.8",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@changesets/changelog-github": "^0.6.0",
+    "@changesets/cli": "^2.31.0",
+    "@rollup/plugin-alias": "^6.0.0",
+    "@rollup/plugin-commonjs": "^29.0.2",
     "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@types/jest": "^30.0.0",
-    "jest": "^30.2.0",
-    "prettier": "^3.6.2",
-    "rollup": "^4.52.4",
+    "@rollup/plugin-terser": "^1.0.0",
+    "prettier": "^3.8.3",
+    "rollup": "^4.60.2",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-dts": "^6.2.3",
-    "rollup-plugin-typescript2": "^0.36.0",
-    "rollup-plugin-visualizer": "^6.0.4",
-    "ts-jest": "^29.4.5",
+    "rollup-plugin-dts": "^6.4.1",
+    "rollup-plugin-typescript2": "^0.37.0",
+    "rollup-plugin-visualizer": "^7.0.1",
     "tslib": "^2.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3",
+    "vitest": "^3.0.0"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
     "radash": "^12.1.1",
-    "ulid": "^3.0.1"
+    "ulid": "^3.0.2"
   },
   "bugs": {
     "url": "https://github.com/robot-crane/paper-crane-tools/issues"

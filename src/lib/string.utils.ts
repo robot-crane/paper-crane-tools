@@ -7,7 +7,7 @@ import { ulid as ulidJs } from 'ulid';
  * @returns {string} The camel case formatted string.
  */
 export function toCamel(str?: string): string {
-  if (!str) return '';
+  if (!str || typeof str !== 'string') return '';
   return camel(str);
 }
 
@@ -17,7 +17,7 @@ export function toCamel(str?: string): string {
  * @returns {string} The snake case formatted string.
  */
 export function toSnake(str?: string): string {
-  if (!str) return '';
+  if (!str || typeof str !== 'string') return '';
   return snake(str);
 }
 
@@ -27,7 +27,7 @@ export function toSnake(str?: string): string {
  * @returns {string} The title case formatted string.
  */
 export function toTitle(str?: string): string {
-  if (!str) return '';
+  if (!str || typeof str !== 'string') return '';
   return title(str);
 }
 
@@ -37,7 +37,7 @@ export function toTitle(str?: string): string {
  * @returns {string} The string with the first character capitalized.
  */
 export function toCapitalize(str?: string): string {
-  if (!str) return '';
+  if (!str || typeof str !== 'string') return '';
   return capitalize(str);
 }
 
@@ -47,7 +47,8 @@ export function toCapitalize(str?: string): string {
  * @returns {string} The lowercase formatted string.
  */
 export function toLower(str?: string): string | undefined {
-  return str?.toLowerCase();
+  if (!str || typeof str !== 'string') return undefined;
+  return str.toLowerCase();
 }
 
 /**
@@ -56,7 +57,8 @@ export function toLower(str?: string): string | undefined {
  * @returns {string} The uppercase formatted string.
  */
 export function toUpper(str?: string): string | undefined {
-  return str?.toUpperCase();
+  if (!str || typeof str !== 'string') return undefined;
+  return str.toUpperCase();
 }
 
 /**
@@ -66,7 +68,7 @@ export function toUpper(str?: string): string | undefined {
  */
 export function capitalizeFirstLetter(str?: string): string {
   // 首字母大写
-  if (!str) return '';
+  if (!str || typeof str !== 'string') return '';
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
+    "types": ["vitest/globals", "node"],
+    "moduleResolution": "bundler",
     "outDir": "./out",
     "rootDir": "src",
     "strict": true,
@@ -11,11 +12,12 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "declarationMap": true, // enables importers to jump to source
+    "declarationMap": true,
     "baseUrl": ".",
     "paths": {
       "@lib/*": ["src/lib/*"]
-    }
+    },
+    "ignoreDeprecations": "6.0"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "out"]
