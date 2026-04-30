@@ -42,6 +42,9 @@ importers:
       '@rollup/plugin-terser':
         specifier: ^1.0.0
         version: 1.0.0(rollup@4.60.2)
+      '@types/node':
+        specifier: ^25.6.0
+        version: 25.6.0
       prettier:
         specifier: ^3.8.3
         version: 3.8.3
@@ -3051,7 +3054,6 @@ snapshots:
   '@types/node@25.6.0':
     dependencies:
       undici-types: 7.19.2
-    optional: true
 
   '@types/resolve@1.20.2': {}
 
@@ -3779,8 +3781,7 @@ snapshots:
 
   ulid@3.0.2: {}
 
-  undici-types@7.19.2:
-    optional: true
+  undici-types@7.19.2: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
 
